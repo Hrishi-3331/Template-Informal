@@ -25,6 +25,7 @@ import com.hrishi3331studio.template_informal.Notifications.Notifications;
 import com.hrishi3331studio.template_informal.R;
 import com.hrishi3331studio.template_informal.Support.ContactUs;
 import com.hrishi3331studio.template_informal.Support.Support;
+import com.hrishi3331studio.template_informal.User.Profile;
 import com.hrishi3331studio.template_informal.UserAuth.SignUp;
 
 public class MainActivity extends AppCompatActivity {
@@ -77,6 +78,10 @@ public class MainActivity extends AppCompatActivity {
 
                     case R.id.support:
                         startActivity(new Intent(MainActivity.this, Support.class));
+                        break;
+
+                    case R.id.profile:
+                        startActivity(new Intent(MainActivity.this, Profile.class));
                         break;
 
                     case R.id.logout:
