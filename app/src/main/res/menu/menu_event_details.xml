@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="axis.hrishi3331studio.vnit.axis20.EventSection.EventDetails">
+    tools:context="com.hrishi3331studio.template_informal">
 
     <item android:id="@+id/notifications"
         android:icon="@mipmap/baseline_notifications_white_24"
