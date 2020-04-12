@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.hrishi3331studio.template_informal.MainActivity;
+import com.hrishi3331studio.template_informal.General.MainActivity;
 import com.hrishi3331studio.template_informal.R;
 
 public class SignUp extends AppCompatActivity {
@@ -38,7 +38,7 @@ public class SignUp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
         mAuth = FirebaseAuth.getInstance();
-        mRef = FirebaseDatabase.getInstance().getReference().child("Users");
+        mRef = FirebaseDatabase.getInstance().getReference().child("users");
 
         name = (EditText)findViewById(R.id.form_name);
         email = (EditText)findViewById(R.id.form_email);
@@ -113,7 +113,6 @@ public class SignUp extends AppCompatActivity {
                     DatabaseReference aref = mRef.child(user.getUid());
                     aref.child("name").setValue(name);
                     aref.child("contact").setValue(mobile);
-                    aref.child("id").setValue(user.getUid());
                     aref.child("email").setValue(user.getEmail()).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {

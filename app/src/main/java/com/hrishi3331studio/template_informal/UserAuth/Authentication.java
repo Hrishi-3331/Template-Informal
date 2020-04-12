@@ -17,7 +17,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.hrishi3331studio.template_informal.MainActivity;
+import com.hrishi3331studio.template_informal.General.MainActivity;
 import com.hrishi3331studio.template_informal.R;
 
 public class Authentication extends AppCompatActivity {
