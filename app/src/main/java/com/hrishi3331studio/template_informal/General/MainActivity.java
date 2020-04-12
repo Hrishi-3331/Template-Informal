@@ -16,6 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -27,6 +28,8 @@ import com.hrishi3331studio.template_informal.Support.ContactUs;
 import com.hrishi3331studio.template_informal.Support.Support;
 import com.hrishi3331studio.template_informal.User.Profile;
 import com.hrishi3331studio.template_informal.UserAuth.SignUp;
+import com.makeramen.roundedimageview.RoundedImageView;
+import com.squareup.picasso.Picasso;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -101,10 +104,17 @@ public class MainActivity extends AppCompatActivity {
         View header = mNavigation.getHeaderView(0);
         TextView name = (TextView) header.findViewById(R.id.user_name);
         TextView email = (TextView) header.findViewById(R.id.header_email);
+        RoundedImageView image = (RoundedImageView)header.findViewById(R.id.user_header_image);
 
         if (mUser != null) {
             email.setText(mUser.getEmail());
             name.setText(mUser.getDisplayName());
+            try{
+                Picasso.get().load(mUser.getPhotoUrl()).into(image);
+            }
+            catch (Exception e){
+                e.printStackTrace();
+            }
         }
 
         dialog = new LoaderDialog(MainActivity.this);
