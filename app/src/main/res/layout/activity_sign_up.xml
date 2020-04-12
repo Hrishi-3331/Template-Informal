@@ -66,16 +66,15 @@
             android:padding="8dp"
             >
 
-            <TextView
 
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="Name :"
-                android:textColor="@android:color/white"
-                android:textSize="14sp" />
 
             <EditText
+                android:drawablePadding="10dp"
+                android:textColorHint="@android:color/white"
+                android:hint="Name"
+                android:layout_margin="8dp"
+                android:drawableLeft="@mipmap/baseline_account_circle_black_24"
+                android:drawableTint="@android:color/white"
                 android:id="@+id/form_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -85,16 +84,14 @@
                 android:textColor="@android:color/background_light"
                 android:textSize="16sp" />
 
-            <TextView
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="Email :"
-                android:textColor="@android:color/white"
-                android:textSize="14sp" />
 
             <EditText
+                android:drawablePadding="10dp"
+                android:textColorHint="@android:color/white"
+                android:hint="Email ID"
+                android:layout_margin="8dp"
+                android:drawableLeft="@mipmap/baseline_email_white_24"
+                android:drawableTint="@android:color/white"
                 android:id="@+id/form_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -104,16 +101,13 @@
                 android:textColor="@android:color/background_light"
                 android:textSize="16sp" />
 
-            <TextView
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="Mobile no. :"
-                android:textColor="@android:color/white"
-                android:textSize="14sp" />
-
             <EditText
+                android:drawablePadding="10dp"
+                android:textColorHint="@android:color/white"
+                android:hint="Mobile No."
+                android:layout_margin="8dp"
+                android:drawableLeft="@mipmap/baseline_phone_android_black_24"
+                android:drawableTint="@android:color/white"
                 android:id="@+id/form_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -123,15 +117,13 @@
                 android:textColor="@android:color/background_light"
                 android:textSize="16sp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="Password :"
-                android:textColor="@android:color/white"
-                android:textSize="14sp" />
-
             <EditText
+                android:drawablePadding="10dp"
+                android:textColorHint="@android:color/white"
+                android:hint="Password"
+                android:layout_margin="8dp"
+                android:drawableLeft="@mipmap/baseline_lock_white_24"
+                android:drawableTint="@android:color/white"
                 android:id="@+id/form_pass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -141,15 +133,13 @@
                 android:textColor="@android:color/background_light"
                 android:textSize="16sp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="Confirm Password :"
-                android:textColor="@android:color/white"
-                android:textSize="14sp" />
-
             <EditText
+                android:drawablePadding="10dp"
+                android:textColorHint="@android:color/white"
+                android:hint="Re-enter Password"
+                android:layout_margin="8dp"
+                android:drawableLeft="@mipmap/baseline_lock_white_24"
+                android:drawableTint="@android:color/white"
                 android:id="@+id/form_pass2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
